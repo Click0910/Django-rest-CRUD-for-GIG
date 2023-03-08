@@ -39,7 +39,7 @@ If you want to run inside a docker, you need to have docker installed and availa
 
 `Dockerfile` and `docker-compose.yaml` files are provided.
 
-Modify `settings.py` file that is located deacrud:
+Modify `settings.py` file that is located deacrud directory:
 
 In `settings.py` Go to Databases and replace:
 `'HOST': 'localhost',` with `'HOST': 'db',`(Set in `docker-compose.yaml`).

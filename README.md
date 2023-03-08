@@ -1,5 +1,14 @@
 Simple CRUD Example build in Django Rest framework.
 
+
+The app has two simple endpoints with all CRUD basic operations and filter by id. One endpoint is for dealers and 
+another endpoint is for locations.
+
+The DB has two tables, one for dealers and one for locations with many to many relations, This is because in this 
+example one dealer can have many locations and one location can have many dealers.
+
+-----------------
+
 Pre-requisites:
 
 PostgresSQL DB
@@ -33,10 +42,3 @@ in .yaml file and the settings.py
 
 Just run `docker-compose up --build`
 
--------------------
-
-The app has two simple endpoints with all CRUD basic operations and filter by id. One endpoint is for dealers and 
-another endpoint is for locations.
-
-The DB has two tables, one for dealers and one for locations with many to many relations, This is because in this 
-example one dealer can have many locations and one location can have many dealers.

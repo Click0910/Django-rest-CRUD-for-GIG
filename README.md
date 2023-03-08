@@ -37,7 +37,14 @@ to run the app execute: `python manage.py runserver`
 
 If you want to run inside a docker, you need to have docker installed and availabe.
 
-`Dockerfile` and `docker-compose.yaml` files are provided. Just ensure that the credential for database are setting up
+`Dockerfile` and `docker-compose.yaml` files are provided.
+
+Modify `settings.py` file:
+
+In `settinf.py` Go to Databases and replace:
+`'HOST': 'localhost',` with `'HOST': 'db',`(Set in `docker-compose.yaml`).
+
+Just ensure that the credential for database are setting up
 in .yaml file and the settings.py
 
 Just run `docker-compose up --build`
